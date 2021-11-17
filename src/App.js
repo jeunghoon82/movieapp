@@ -22,9 +22,11 @@ function App() {
     </Router>
     */
     <Router>
-      <Route path="/" exact={true} component={Home} />
-      <Route path="hello"><h1>hello</h1></Route>
-      <Route path="/movie/:id" component={Detail} />
+      <Switch>
+        <Route path="/" exact={true} component={Home} />
+        <Route path="Hello Every One"><h1>hello</h1></Route>
+        <Route path="/movie/:id" component={Detail} />
+      </Switch>
     </Router>
   );
 }

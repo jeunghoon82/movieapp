@@ -11,7 +11,7 @@ function App() {
       <Route path="/movie/:id">
         <Detail />
       </Route>
-      <Route path="/home">
+      <Route path="/">
         <Home />
       </Route>
       {/* </Switch> */}

@@ -18,15 +18,15 @@
 }
 #aLink:last-child{margin-top:20px;}
 
-li {
+.detail li {
   display: inline-block;
   margin-right: 25px;
 }
-p {
+.detail p {
   margin: 5px 0;
 }
 
-button {
+.detail button {
   position: fixed;
   top: 50px;
   right: 50px;
@@ -39,9 +39,8 @@ button {
   margin-top:25px;
   padding-bottom:50px;
 }
-span{margin-right:30px;}
+.detail span{margin-right:30px;}
 
 .infoBox{position:absolute; display:block; top:100px; width:50%; left:50%;}
 .infoBox>div{margin-bottom: 15px;}
-
 

@@ -28,3 +28,10 @@
     width: 100%;
   }
 }
+
+.navBar {padding:30px;}
+.navBar li {display:inline-block; margin:0px; width:150px;}
+.movies li{display:inline; margin-right:10px;}
+.movies>div>div {overflow: hidden;}
+.navBar span {margin-right:0px}
+.navBar select {width:40%; text-align: center;}

@@ -45,12 +45,12 @@ function Detail() {
             <div>
               <p>링크 : </p>
               {movie.torrents[0].url ? (
-                <a href={movie.torrents[0].url} target="_blank" id={styles.aLink}>
+                <a href={movie.torrents[0].url} target={`_blank`} id={styles.aLink}>
                   토렌트 다운로드
                 </a>
               ) : null}
               {movie.yt_trailer_code ? (
-                <a href={`https://youtu.be/${movie.yt_trailer_code}`} target="_blank" id={styles.aLink}>
+                <a href={`https://youtu.be/${movie.yt_trailer_code}`} target={`_blank`} id={styles.aLink}>
                   유튜브 트레일러
                 </a>
               ) : null}

@@ -6,7 +6,7 @@ import styles from "./Home.module.css";
 
 function Home() {
   const [loading, setLoading] = useState(true);
-  const [index, setIndex] = useState("8");
+  const [index, setIndex] = useState("9");
   const [movies, setMovies] = useState([]);
   
   const onSelect = (e) => {

@@ -40,7 +40,7 @@ function Home() {
           <div className={styles.navBar}>
             <ul>
               <li>
-                <Link to="/">home</Link>
+                <Link to="/home">home</Link>
               </li>
               <li>
                 <span>평점 </span>

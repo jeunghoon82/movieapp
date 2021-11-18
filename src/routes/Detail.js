@@ -57,7 +57,7 @@ function Detail() {
             </div>
           </div>
           <button>
-            <Link to="/">❌</Link>
+            <Link to="/home">❌</Link>
           </button>
         </div>
       )}

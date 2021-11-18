@@ -13,9 +13,10 @@ function Detail() {
     setMovie(json.data.movie);
     setLoading(false);
   };
+
   useEffect(() => {
     getMovie();
-  }, []);
+  }, [id]);
   
   return (
     <div class={styles.detail}>

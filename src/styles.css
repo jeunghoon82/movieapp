@@ -1,5 +1,45 @@
 * {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+  list-style: none;
+}
+legend {
+  display: none;
+}
+fieldset {
+  border: 0 none;
+}
+em {
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+}
+a {
+  display: block;
+}
+label:hover,
+button:hover,
+label input:hover {
+  cursor: pointer;
+}
+#root {
+  width: 100%;
+  position: relative;
 }
 
 body {

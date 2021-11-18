@@ -1,0 +1,47 @@
+.detail {
+  position: absolute;
+  position:fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 50px;
+  color: rgb(222, 222, 222);
+  background-color: rgba(60, 60, 60, 0.9);
+  font-weight: 500;
+  overflow-y:auto;
+}
+#aLink {
+  color: rgb(255, 138, 138);
+}
+#aLink:last-child{margin-top:20px;}
+
+li {
+  display: inline-block;
+  margin-right: 25px;
+}
+p {
+  margin: 5px 0;
+}
+
+button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 60px;
+  height: 40px;
+}
+
+.detailBox>div{
+  display: block;
+  margin-top:25px;
+  padding-bottom:50px;
+}
+span{margin-right:30px;}
+
+.infoBox{position:absolute; display:block; top:100px; width:50%; left:50%;}
+.infoBox>div{margin-bottom: 15px;}
+
+

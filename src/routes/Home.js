@@ -55,7 +55,7 @@ function Home() {
               coverImg={movie.medium_cover_image}
               title={movie.title}
               summary={movie.summary}
-              geners={movie.geners}
+              genres={movie.genres}
             />
           ))}
         </div>

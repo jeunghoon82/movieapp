@@ -39,7 +39,7 @@ function Detail() {
             <div>
               <span>장르 : </span>
               <ul>
-                {movie.geners.map((g) => (
+                {movie.genres.map((g) => (
                   <li key={g}>{g}</li>
                 ))}
               </ul>

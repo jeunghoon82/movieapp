@@ -2,18 +2,17 @@ import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
 
-
 function Home() {
   const [loading, setLoading] = useState(true);
   const [index, setIndex] = useState("9");
   const [movies, setMovies] = useState([]);
-  
+
   const onSelect = (e) => {
     setIndex(e.target.value);
     setLoading(true);
     return index;
-  }
-  
+  };
+
   const getMovies = async () => {
     const json = await (
       await fetch(
@@ -23,11 +22,8 @@ function Home() {
     setMovies(json.data.movies);
     setLoading(false);
   };
-  
-  useEffect(() => {
-    getMovies();
-  }, [index]);
 
+  useEffect(() => getMovies(), [index]);
   return (
     <div className={styles.container}>
       <div className={styles.navBar}>
@@ -59,7 +55,7 @@ function Home() {
               coverImg={movie.medium_cover_image}
               title={movie.title}
               summary={movie.summary}
-              genres={movie.genres}
+              geners={movie.geners}
             />
           ))}
         </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./Detail.module.css";
+
 function Detail() {
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ function Detail() {
   useEffect(() => {
     getMovie();
   }, [id]);
-  
+
   return (
     <div class={styles.detail}>
       {loading ? (
@@ -38,7 +39,7 @@ function Detail() {
             <div>
               <span>장르 : </span>
               <ul>
-                {movie.genres.map((g) => (
+                {movie.geners.map((g) => (
                   <li key={g}>{g}</li>
                 ))}
               </ul>
@@ -46,12 +47,20 @@ function Detail() {
             <div>
               <p>링크 : </p>
               {movie.torrents[0].url ? (
-                <a href={movie.torrents[0].url} target={`_blank`} id={styles.aLink}>
+                <a
+                  href={movie.torrents[0].url}
+                  target={`_blank`}
+                  id={styles.aLink}
+                >
                   토렌트 다운로드
                 </a>
               ) : null}
               {movie.yt_trailer_code ? (
-                <a href={`https://youtu.be/${movie.yt_trailer_code}`} target={`_blank`} id={styles.aLink}>
+                <a
+                  href={`https://youtu.be/${movie.yt_trailer_code}`}
+                  target={`_blank`}
+                  id={styles.aLink}
+                >
                   유튜브 트레일러
                 </a>
               ) : null}
@@ -63,7 +72,6 @@ function Detail() {
         </div>
       )}
     </div>
-    
   );
 }
 export default Detail;
